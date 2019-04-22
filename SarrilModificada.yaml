@@ -65,4 +65,13 @@ Resources:
       - Key: Customer
         Value: Sarril
       - Key: Name
-        Value: Sarril Cloud Platform LaB   
+        Value: Sarril Cloud Platform LaB
+  InternetGateway:
+    Type: "AWS::EC2::InternetGateway"
+    Properties:
+      Tags:
+      - Key: Customer
+        Value: Sarril
+      - Key: Name
+        Value: Sarril Cloud Platform LaB
+    
