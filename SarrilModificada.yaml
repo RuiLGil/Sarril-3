@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Cloud Platform LaB for Sarril
+Resources:
+
+  PlatformVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      InstanceTenancy: default
+      Tags:
+      - Key: Customer
+        Value: Sarril
+      - Key: Name
+        Value: Sarril Cloud Platform LaB
+
+  PublicSubnet01:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: PlatformVPC
+      CidrBlock: 10.0.10.0/24
+      AvailabilityZone: "eu-west-1a"
+      Tags:
+      - Key: Customer
+        Value: Sarril
+      - Key: Name
+        Value: Sarril Cloud Platform LaB
+
+  PublicSubnet02:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: PlatformVPC
+      CidrBlock: 10.0.20.0/24
+      AvailabilityZone: "eu-west-1b"
+      Tags:
+      - Key: Customer
+        Value: Sarril
+      - Key: Name
+        Value: Sarril Cloud Platform LaB
+
+  PrivateSubnet01:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: PlatformVPC
+      CidrBlock: 10.0.110.0/24
+      AvailabilityZone: "eu-west-1a"
+      Tags:
+      - Key: Customer
+        Value: Sarril
+      - Key: Name
+        Value: Sarril Cloud Platform LaB
+
+  PrivateSubnet02:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: PlatformVPC
+      CidrBlock: 10.0.120.0/24
+      AvailabilityZone: "eu-west-1b"
+      Tags:
+      - Key: Customer
+        Value: Sarril
+      - Key: Name
+        Value: Sarril Cloud Platform LaB   
