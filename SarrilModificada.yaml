@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: Cloud Platform LaB for Sarril
+Description: Cloud Platform LaB for Sarrilo
 Resources:
 
   PlatformVPC:
@@ -11,9 +11,9 @@ Resources:
       InstanceTenancy: default
       Tags:
       - Key: Customer
-        Value: Sarril
+        Value: Sarrilo
       - Key: Name
-        Value: Sarril Cloud Platform LaB
+        Value: Sarrilo Cloud Platform LaB
 
   PublicSubnet01:
     Type: AWS::EC2::Subnet
@@ -24,9 +24,9 @@ Resources:
       AvailabilityZone: "eu-west-1a"
       Tags:
       - Key: Customer
-        Value: Sarril
+        Value: Sarrilo
       - Key: Name
-        Value: Sarril Cloud Platform LaB
+        Value: Sarrilo Cloud Platform LaB
 
   PublicSubnet02:
     Type: AWS::EC2::Subnet
@@ -37,9 +37,9 @@ Resources:
       AvailabilityZone: "eu-west-1b"
       Tags:
       - Key: Customer
-        Value: Sarril
+        Value: Sarrilo
       - Key: Name
-        Value: Sarril Cloud Platform LaB
+        Value: Sarrilo Cloud Platform LaB
 
   PrivateSubnet01:
     Type: AWS::EC2::Subnet
@@ -50,9 +50,9 @@ Resources:
       AvailabilityZone: "eu-west-1a"
       Tags:
       - Key: Customer
-        Value: Sarril
+        Value: Sarrilo
       - Key: Name
-        Value: Sarril Cloud Platform LaB
+        Value: Sarrilo Cloud Platform LaB
 
   PrivateSubnet02:
     Type: AWS::EC2::Subnet
@@ -63,15 +63,15 @@ Resources:
       AvailabilityZone: "eu-west-1b"
       Tags:
       - Key: Customer
-        Value: Sarril
+        Value: Sarrilo
       - Key: Name
-        Value: Sarril Cloud Platform LaB
+        Value: Sarrilo Cloud Platform LaB
   InternetGateway:
     Type: "AWS::EC2::InternetGateway"
     Properties:
       Tags:
       - Key: Customer
-        Value: Sarril
+        Value: Sarrilo
       - Key: Name
-        Value: Sarril Cloud Platform LaB
+        Value: Sarrilo Cloud Platform LaB
     
